@@ -67,3 +67,25 @@ a:hover{
 .logo:hover{
     cursor: default;
 }
+
+/* Hamburget menu */
+
+#hamburger-nav{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: space-between;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
