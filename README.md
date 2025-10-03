@@ -1,6 +1,7 @@
 # Personal Portfolio
 
-Welcome to my personal portfolio!   
+Welcome to my personal portfolio!
+
 I’m Daniella, a software engineering graduate passionate about **DevOps**, automation, and building scalable systems. This portfolio showcases my projects, skills, and learning journey.
 
 ---
