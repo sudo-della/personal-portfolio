@@ -215,3 +215,7 @@ section{
 }
 
 /* ICON */
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
