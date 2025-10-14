@@ -150,4 +150,9 @@ a:hover{
 
 /* Sections */
 
-
+.round-image{
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    object-fit: cover;
+}
