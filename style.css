@@ -357,4 +357,8 @@ section{
 
 
 /* Project section */
+#projects{ /* the moving arrow */
+    position: relative;
+}
 
+/* Contacts section */
