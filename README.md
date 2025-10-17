@@ -7,7 +7,7 @@ I’m Daniella, a software engineering graduate passionate about **DevOps**, aut
 ---
 
 ## About Me
-- Degree: Software Engineering and Inormational Technology(both within 3 years)  
+- Degree: Software Engineering and Information Technology(both within 3 years)  
 - Interested in: DevOps, automation, cloud computing, and later penetration testing  
 - Currently learning: Docker, CI/CD pipelines, Terraform, cloud deployments  
 - Contact me: [Email](mailto:daniellamitsh@gmail.com) | [LinkedIn](www.linkedin.com/in/daniella-kalombo-se) | [GitHub](https://github.com/sudo-della)
