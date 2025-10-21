@@ -6,6 +6,7 @@ function toggleMenu() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    const form = document.forms['submit-to-google-sheet'];
     
     form.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -29,9 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error!', error.message);
             alert('Something went wrong. Please try again later.');
         });
-    });
-
-    const form = document.forms['submit-to-google-sheet'];
-
-    
-
+});

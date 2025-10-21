@@ -133,7 +133,6 @@ a:hover::after{
 
 .menu-links li {
     list-style: none;
-    
 }
 
 .menu-links.open {
@@ -534,11 +533,6 @@ form .btn-color-1:hover {
     background-color: #3ea966;
 }
 
-#msg-success{
-    color: green;
-    margin-top: -40px;
-    display: block;
-}
 
 
 
