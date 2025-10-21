@@ -16,6 +16,10 @@ html{
     scroll-behavior: smooth;
 }
 
+:root{
+    --main-color: #023020;
+}
+
 p {
     color: rgb(85, 85, 85);
 }
@@ -38,6 +42,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    background-color: #023020;
 }
 
 .nav-links{
@@ -47,7 +52,7 @@ nav{
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     text-decoration-color: none;
     position: relative;
@@ -75,11 +80,15 @@ a:hover::after{
 
 .logo{
     font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 
 .logo:hover{
-    cursor: default;
+    transform: scale(1.05);
 }
 
 /* hamburger menue */
@@ -183,10 +192,7 @@ section{
 
 
 /* Profile section*/
-.round-image{
-    border-radius: 50%;
-    object-fit: cover;
-}
+
 
 #profile{
     display: flex;
@@ -195,11 +201,36 @@ section{
     height: 80vh;
 }
 
+.round-image{
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;
+}
+
 .section__pic-container{
     display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0; 
+    
+}
+
+.round-image:hover {
+    box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 25px var(--main-color);}
+
+@keyframes floatImage {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .section__text{
@@ -255,7 +286,7 @@ section{
 }
 
 .btn-color-1, btn-color-2{
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: #023020 0.1rem solid;
 }
 
 .btn-color-1:hover, btn-color-2:hover {
@@ -263,12 +294,12 @@ section{
 }
 
 .btn-color-1, btn-color-2:hover {
-    background-color: rgb(53, 53, 53);
+    background-color: #023020;
     color: white;
 }
 
 .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: #4B5320;
 }
 
 .btn-color-2 {
