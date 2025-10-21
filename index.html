@@ -333,15 +333,28 @@
     
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:exampleemail@gmail.com">Example@gamil.com</a><p></p>
+                <div class="row">
+                    <div class="contact-left">
+                        <h4>Contact details</h4>
+                        <p><i class="fas fa-paper-plane"></i> daniellamitsh@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> 0693324939</p>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                            <!-- Add more icons if you want -->
+                        </div>
+                    </div>
+        
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name" required />
+                            <input type="email" name="email" placeholder="Your Email" required />
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-color-1">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com">Linkedin</a></p>
-            </div>
-        </div>    
+        </div>
     </section>
 
     <footer class="footer" id="footer">
