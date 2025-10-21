@@ -17,8 +17,10 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Project</a></li>
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
         </div>
     </nav>
@@ -37,6 +39,7 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -50,8 +53,8 @@
 
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Daniella Kalombo</h1>
-            <p class="section__text__p2">Software Engineer</p>
+            <h1 class="title">Daniella Kalombo,</h1>
+            <p class="section__text__p2">And i am a <span>Software Engineer</span></p>
 
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
@@ -229,12 +232,70 @@
             </div>
         </div>
 
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#services'" />
     </section>
 
+    <section id="services">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Services</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <!-- Project Card 1 -->
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Service 1" class="service-img" />
+                    </div>
+                    <h2 class="experience-sub-title service-title">Service One</h2>
+                    <div>
+                        <button class="btn btn-color-2 service-btn"
+                            onclick="location.href='https://github.com/sudo-della/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 service-btn"
+                            onclick="location.href='https://github.com/sudo-della/'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <!-- Project Card 1 -->
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Service 2" class="service-img" />
+                    </div>
+                    <h2 class="experience-sub-title service-title">Service Two</h2>
+                    <div>
+                        <button class="btn btn-color-2 service-btn"
+                            onclick="location.href='https://github.com/sudo-della/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 service-btn"
+                            onclick="location.href='https://github.com/sudo-della/'">Live
+                            Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <!-- Service Card 1 -->
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="service 3" class="service-img" />
+                    </div>
+                    <h2 class="experience-sub-title service-title">Service Three</h2>
+                    <div>
+                        <button class="btn btn-color-2 service-btn"
+                            onclick="location.href='https://github.com/sudo-della/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 service-btn"
+                            onclick="location.href='https://github.com/sudo-della/'">Live
+                            Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    
+    </section>
+    
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects In Progress</h1>
+        <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
             <div class="details-container color-container">
@@ -280,7 +341,7 @@
             </div>
         </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
 
     </section>
 
