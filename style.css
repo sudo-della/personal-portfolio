@@ -51,6 +51,8 @@ nav{
     font-size: 1.5rem;
 }
 
+
+
 a {
     color: white;
     text-decoration: none;
@@ -74,18 +76,13 @@ a:hover::after{
     width: 100%;
 }
 
-.logo{
-    font-size: 2rem;
-    color: white;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s ease;
+.logo img {
+    max-height: 300px;
+    width: auto;
+    display: block;
+    margin-top: 100px;
 }
 
-
-.logo:hover{
-    transform: scale(1.05);
-}
 
 /* Hamburger menu */
 #hamburger-nav {
@@ -170,6 +167,10 @@ section{
 
 /* Profile section*/
 
+#profile {
+    /* the moving arrow */
+    position: relative;
+}
 
 #profile{
     display: flex;
@@ -423,7 +424,7 @@ article .icon{
 }
 
 #services .about-containers div{
-    background: #4B5320;
+    background: #4b532096;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
