@@ -76,7 +76,7 @@ a:hover::after{
     width: 100%;
 }
 
-.logo img {
+.hamburger-nav, .logo img {
     max-height: 200px;
     width: auto;
     display: block;
@@ -85,6 +85,13 @@ a:hover::after{
 
 
 /* Hamburger menu */
+
+#hamburger-nav .logo img{
+    max-height: 100px;
+    width: auto;
+    display: block;
+    margin-top: 5px;
+}
 #hamburger-nav {
     display: none;
 }
@@ -141,7 +148,6 @@ a:hover::after{
     right: 0;
 }
 
-/* Animate icon into X */
 .hamburger-icon.open .fa-bars {
     display: none;
 }
