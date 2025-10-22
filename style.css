@@ -32,11 +32,11 @@ a,
 }
 
 /* Desktop */
-nav, 
+
+nav,
 .nav-links{
     display: flex;
-    /* align-items: center;
-    justify-content: space-between; */
+
 }
 nav{
     justify-content: space-around;
@@ -72,10 +72,6 @@ a::after{
 
 a:hover::after{
     width: 100%;
-    /* color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181); */
 }
 
 .logo{
@@ -231,6 +227,31 @@ section{
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
+
+.multiple-text{
+    color: #3ea966;
+}
+
+.multiple-text::after{
+    content: '|';
+    animation: blink 0.8s infinite;
+}
+
+
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
 
 .title{
     font-size: 3rem;

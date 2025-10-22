@@ -6,7 +6,6 @@ function toggleMenu() {
     icon.classList.toggle('open');
 }
 
-// Close menu when a link is clicked
 document.querySelectorAll('.menu-links a').forEach(link => {
     link.addEventListener('click', () => {
         document.querySelector('.menu-links').classList.remove('open');
@@ -49,3 +48,37 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Something went wrong. Please try again later.');
         });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const textElement = document.querySelector(".multiple-text");
+    const words = ["Software Engineer"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let typingSpeed = 150;
+    let erasingSpeed = 100;
+    let delayBetweenWords = 1000;
+
+    function type() {
+        if (charIndex < words[wordIndex].length) {
+            textElement.textContent += words[wordIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typingSpeed);
+        } else {
+            setTimeout(erase, delayBetweenWords);
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            textElement.textContent = words[wordIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erase, erasingSpeed);
+        } else {
+            wordIndex = (wordIndex + 1) % words.length;
+            setTimeout(type, 500);
+        }
+    }
+
+    if (textElement) type();
+});
+
