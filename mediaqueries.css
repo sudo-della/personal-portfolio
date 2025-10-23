@@ -44,6 +44,7 @@
 
     section {
         margin: 0 5%;
+        
     }
 
     .section__pic-container {
@@ -60,20 +61,17 @@
 @media screen and (max-width: 600px) {
 
     #contact {
-            /* Increased height for mobile to avoid overlap */
             height: auto;
             padding-bottom: 4rem;
         }
 
     footer {
-        /* Ensuring footer stays at the bottom */
         position: relative;
         bottom: 0;
         padding-top: 2rem;
         padding-bottom: 2rem;
         height: auto;
         margin-top: 2rem;
-        /* Give some space to the content above */
     }
 
     #profile {
@@ -135,5 +133,12 @@
 
     .text-container {
         text-align: justify;
+    }
+
+    @media screen and (max-width: 768px) {
+        .section-container {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 }

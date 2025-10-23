@@ -82,3 +82,20 @@ document.addEventListener('DOMContentLoaded', function() {
     if (textElement) type();
 });
 
+// ===== Read More / Read Less Functionality =====
+document.addEventListener("DOMContentLoaded", () => {
+    const readMoreBtn = document.getElementById("read-more-btn");
+    const moreText = document.getElementById("more-text");
+
+    if (readMoreBtn && moreText) {
+        readMoreBtn.addEventListener("click", () => {
+        if (moreText.style.display === "none" || moreText.style.display === "") {
+            moreText.style.display = "inline";
+            readMoreBtn.textContent = "Read less";
+        } else {
+            moreText.style.display = "none";
+            readMoreBtn.textContent = "Read more";
+        }
+        });
+    }
+});
